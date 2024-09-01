@@ -29,8 +29,7 @@ def extract_content_from_page(file_path):
     """
     parsed_data = {}
 
-    # WRITE YOUR CODE HERE
-    ##################################
+    
     soup = bs(open(file_path,"r",encoding='utf-8').read(),"html.parser")
     date = soup.find('meta', {'name': 'PubDate'})['content']
     title = soup.find('meta', {'name': 'ArticleTitle'})['content']
@@ -40,7 +39,6 @@ def extract_content_from_page(file_path):
        content += p.text.strip() + '\n\n'
     parsed_data = {'date': date, 'title': title, 'content': content}
 
-    ##################################
 
     return parsed_data
 
