@@ -21,14 +21,13 @@ def get_page_content(page_url):
     content (string) of that page.
     """
 
-    # WRITE YOUR CODE HERE
-    ###############################
+   
 
     # Save the page content (html) in the variable "page_html"
     resp=requests.get(page_url)
     page_html = resp.text
 
-    ###############################
+    
 
     return page_html
 
