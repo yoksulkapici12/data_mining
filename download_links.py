@@ -49,11 +49,10 @@ def download_links_from_index():
             start_page = data["page"].astype("int").max()
             downloaded_url_list = data["url"].to_list()
 
-    # WRITE YOUR CODE HERE
-    #########################################
+   
     # Start downloading from the page "start_page"
     # which is the page you ended at the last
-    # time you ran the code (if you had an error and the code stopped)
+    
     first_page_URL="https://www.fmprc.gov.cn/mfa_eng/wjbxw/index.html"
     root_path="https://www.fmprc.gov.cn/mfa_eng/wjbxw/index_"
     collected_url = ""
